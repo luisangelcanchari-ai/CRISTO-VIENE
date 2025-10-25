@@ -1,0 +1,128 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    color: #333;
+    background: #f5f5f5;
+}
+
+/* ---- Encabezado general ---- */
+header {
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.inicio header { background: linear-gradient(135deg, #005f99, #003d66); }
+.electro header { background: linear-gradient(135deg, #007bff, #003d99); }
+.bici header { background: linear-gradient(135deg, #00994c, #006633); }
+
+header h1 { margin: 0; font-size: 2em; }
+header p { margin: 0.3em 0 1em; }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+nav a {
+    color: rgb(21, 20, 20);
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover { text-decoration: underline; }
+
+.seccion {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+.banner {
+    text-align: center;
+    padding: 30px 0;
+    background: #f2f2f2;
+}
+
+.banner img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.banner-texto {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/* ---- Encargado ---- */
+.encargado {
+    background: #e6f4ff;
+}
+.card-encargado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card-encargado img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+/* ---- Botón ---- */
+.boton {
+    background: #005f99;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+.boton:hover { background: #004266; }
+
+/* ---- Footer ---- */
+footer {
+    background: #222;
+    color: rgb(15, 15, 15);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+    .servicios, .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.mapa iframe {
+    width: 90%;
+    max-width: 700px;
+    height: 400px;
+    border-radius: 15px;
+    border: 3px solid #004aad;
+}
+
+
